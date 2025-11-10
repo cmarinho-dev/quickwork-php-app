@@ -18,11 +18,13 @@ include_once("../_components/header.php");
   <body>
     <?= $header ?>
     <div class="container pt-4">
+        <h3 class="text-lg-center mt-3">Bem Vindo ao QuickWork</h3>
+        <div class="text-md-center mb-5">Aqui você pode contratar serviços, ou ofertar seu serviço e ter um retorno rápido!</div>
         <div class="d-flex justify-content-between mt-4">
           <h3>Gerenciar Usuários</h3>
           <button id="novo" class="btn btn-primary">+ Novo Cliente</button>
         </div>
-      <div id="lista" class="mt-4 rounded-5"></div>
+      <div id="lista" class="card p-2 mt-4 rounded-5"></div>
     </div>
     <script src="../js/cliente_listar.js"></script>
     <script src="../js/_valida_sessao.js"></script>

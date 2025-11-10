@@ -40,7 +40,7 @@ async function excluir(id) {
 function preencherTabela(tabela) {
   var html = `
         <table class="table table-striped">
-            <tr class="table-dark">
+            <tr>
                 <th> # </th>
                 <th> Nome </th>
                 <th> Usuario </th>

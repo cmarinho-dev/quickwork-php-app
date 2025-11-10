@@ -12,11 +12,11 @@
         $items       = $_POST['items']; // $_POST['items'];
         $status      = $_POST['status'];
         $valor    = $_POST['valor'];
-        $data    = $_POST['data'];
+        $datapedido    = $_POST['datapedido'];
     
         // Preparando para inserção no banco de dados
         $stmt = $conexao->prepare("UPDATE pedido SET items = ?, status = ?, valor = ?, datapedido = ? WHERE id = ?");
-        $stmt->bind_param("ssssi",$items, $status, $valor, $data, $_GET['id']);
+        $stmt->bind_param("ssssi",$items, $status, $valor, $datapedido, $_GET['id']);
         $stmt->execute();
 
         if($stmt->affected_rows > 0){

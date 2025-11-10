@@ -10,13 +10,13 @@ async function novo() {
   var items = document.getElementById("items").value;
   var status = document.getElementById("status").value;
   var valor = document.getElementById("valor").value;
-  var data = document.getElementById("data").value;
+  var datapedido = document.getElementById("datapedido").value;
 
   const fd = new FormData();
   fd.append("items", items);
   fd.append("status", status);
   fd.append("valor", valor);
-  fd.append("data", data);
+  fd.append("datapedido", datapedido);
 
   const retorno = await fetch("../php/pedido_novo.php", {
     method: "POST",

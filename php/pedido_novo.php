@@ -9,12 +9,12 @@
     $items           = $_POST['items']; // $_POST['items'];
     $status  = $_POST['status'];
     $valor= $_POST['valor'];
-    $data= $_POST['data'];
+    $datapedido= $_POST['datapedido'];
     
     // Preparando para inserção no banco de dados
     $stmt = $conexao->prepare("
     INSERT INTO pedido(items, status, valor, datapedido) VALUES(?,?,?,?)");
-    $stmt->bind_param("ssss",$items, $status, $valor, $data);
+    $stmt->bind_param("ssss",$items, $status, $valor, $datapedido);
     $stmt->execute();
 
     if($stmt->affected_rows > 0){

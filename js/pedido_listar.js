@@ -45,7 +45,7 @@ function preencherTabela(tabela) {
                 <th> Items </th>
                 <th> Status </th>
                 <th> Valor </th>
-                <th> Data </th>
+                <th> Data do Pedido </th>
                 <th> </th>
             </tr>`;
   for (var i = 0; i < tabela.length; i++) {

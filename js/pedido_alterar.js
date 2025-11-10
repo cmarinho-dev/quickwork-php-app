@@ -13,7 +13,7 @@ async function buscar(id) {
     document.getElementById("items").value = registro.items;
     document.getElementById("status").value = registro.status;
     document.getElementById("valor").value = registro.valor;
-    document.getElementById("data").value = registro.datapedido;
+    document.getElementById("datapedido").value = registro.datapedido;
     document.getElementById("id").value = id;
   } else {
     alert("ERRO:" + resposta.mensagem);
@@ -29,14 +29,14 @@ async function alterar() {
   var items = document.getElementById("items").value;
   var status = document.getElementById("status").value;
   var valor = document.getElementById("valor").value;
-  var data = document.getElementById("data").value;
+  var datapedido = document.getElementById("datapedido").value;
   var id = document.getElementById("id").value;
 
   const fd = new FormData();
   fd.append("items", items);
   fd.append("status", status);
   fd.append("valor", valor);
-  fd.append("data", data);
+  fd.append("datapedido", datapedido);
 
   const retorno = await fetch("../php/pedido_alterar.php?id=" + id, {
     method: "POST",
