@@ -10,13 +10,12 @@
     $email      = $_POST['email'];
     $usuario    = $_POST['usuario'];
     $senha      = $_POST['senha'];
-    $instagram   = $_POST['instagram'];
     $ativo      = (int) $_POST['ativo'];
 
     // Preparando para inserção no banco de dados
     $stmt = $conexao->prepare("
-    INSERT INTO cliente(nome, email, usuario, senha, instagram, ativo) VALUES(?,?,?,?,?,?)");
-    $stmt->bind_param("sssssi",$nome, $email, $usuario, $senha, $instagram, $ativo);
+    INSERT INTO cliente(nome, email, usuario, senha, ativo) VALUES(?,?,?,?,?)");
+    $stmt->bind_param("ssssi",$nome, $email, $usuario, $senha, $ativo);
     $stmt->execute();
 
     if($stmt->affected_rows > 0){

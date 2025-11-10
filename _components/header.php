@@ -11,47 +11,46 @@ $header = <<<HTML
         font-weight: bold;
     }
   </style>
-<div class="demo-section">
-    <div class="container">
-        <h3 class="demo-title">3. Glass Effect Navbar</h3>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-glass mx-3">
+        <a class="navbar-brand logo text-dark" href="#">
+            <i class="fas fa-layer-group text-info"></i>
+            QuickWork
+        </a>
 
-    <nav class="navbar navbar-expand-lg navbar-glass">
-        <div class="container">
-            <a class="navbar-brand logo text-dark" href="#">
-                <i class="fas fa-layer-group text-info"></i>
-GlassUI
-            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav3">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav3">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav3">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-medium" href="#">
-                            <i class="fas fa-search"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-info text-white ms-2" href="#">Sign In</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav3">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../home">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../categoria">Categorias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../servico">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../pedido">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../prestador">Prestadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="../mensagem">Mensagens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-medium" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button id="logoff" class="btn btn-danger">Sair</button>
+                </li>
+            </ul>
         </div>
     </nav>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 HTML;
